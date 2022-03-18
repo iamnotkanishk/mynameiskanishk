@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SNAKE INC</title>
+  </head>
+  <body>
+    <br/>
+    <style>
+      body {
+        height: x0vh;
+        width: 100vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: white;
+        display: flex;
+      }
+
+      #game-board {
+        background-color: black;
+        width: 100vmin;
+        height: 100vmin;
+        display: grid;
+        grid-template-rows: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+      }
+
+
+      .move {
+        position: absolute;
+        margin-top: 10px;
+        top: 0;
+      }
+
+      .snake {
+        background-color: greenyellow ;
+        border:.25vmin solid black;
+      }
+
+      .food {
+        background-color: red;
+        border: .25vmin solid black;
+      }
+    </style>
+    <script src="game.js" defer type="module"></script>
+    <div id="game-board"></div>
+  </body>
+</html>
