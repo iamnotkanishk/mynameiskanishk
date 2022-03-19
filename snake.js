@@ -1,4 +1,4 @@
-import { Inputdirection, Inputdirection } from "./input.js"
+import { Inputdirection } from "./input.js"
 
 export const SNAKE_SPEED = 3
 const snakeBody = [{ x: 11, y: 11 }]
