@@ -34,8 +34,7 @@ function update() {
 }
 
 function draw() {
-    gameBoard.innerHTML = 
-    drawSnake()
+    drawSnake(gameboard)
 }
 
 function checkDeath() {
