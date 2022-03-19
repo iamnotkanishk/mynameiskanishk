@@ -25,7 +25,7 @@ function main(currentTime) {
     draw()
 }
 
-window.requestAnimationFrame(main)
+window.requestAnimationFrame(main(Date.now()))
 
 function update() {
     updateSnake()
