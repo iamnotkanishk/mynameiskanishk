@@ -9,15 +9,15 @@ window,addEventListener( 'keydown' , e => {
             break
          case 'ArrowDown':
             if (lastInputDirection.y == 0) break
-            nputdirection.y=1
+            Inputdirection.y=1
             break
          case 'ArrowLeft':
             if (lastInputDirection.y == 0) break
-            nputdirection.x=-1
+            Inputdirection.x=-1
             break
          case 'ArrowRight':
             if (lastInputDirection.y == 0) break
-            nputdirection.y=1
+            Inputdirection.y=1
             break
     }
 })
