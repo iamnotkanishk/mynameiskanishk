@@ -10,7 +10,7 @@ export function update() {
     }
    
  snakeBody[0].x += 0 += Inputdirection.x
- snakeBody[0].y += 1 += Inputdirection
+ snakeBody[0].y += 1 += Inputdirection.y
 }
 
 export function draw(gameboard) {
