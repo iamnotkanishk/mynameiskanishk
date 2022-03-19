@@ -7,7 +7,7 @@ let gameover = false
 const gameBoard = document.getElementById('game-Board')
 
 
-function main(currentTime) {
+async function main(currentTime) {
  if (gameover) {
     if (confirm('You lost. Press ok to restart')) {
         window.location = '/'
@@ -20,9 +20,9 @@ function main(currentTime) {
     if (secondSinceLastRender < 1 / SNAKE_SPEED) return
     
     lastRenderTime = currentTime
+    await draw()
+    await update()
 
-    update()
-    draw()
 }
 
 window.requestAnimationFrame(main(Date.now()))
